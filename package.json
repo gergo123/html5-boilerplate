@@ -1,0 +1,28 @@
+{
+  "name": "html5-boilerplate-css-webpack",
+  "version": "1.0.0",
+  "description": "Minimalistic html5 boilerplate with scaling header, main and footer sections with webpack support.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:prod": "webpack --config webpack.config.js --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gergo123/html5-boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gergo123/html5-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gergo123/html5-boilerplate#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

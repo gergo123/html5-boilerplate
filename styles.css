@@ -1,0 +1,34 @@
+body,
+html {
+    margin: 0;
+    height: 100%
+}
+
+body {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(103, 103, 255);
+    padding: 9px;
+}
+
+main {
+    background-color: rgb(204, 204, 253);
+    flex-grow: 1;
+
+    padding: 16px;
+}
+
+footer {
+    background-color: rgb(147, 147, 255);
+    padding: 9px
+}
+
+.content {
+    margin-left: 20%;
+    margin-right: 20%;
+}

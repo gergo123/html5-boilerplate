@@ -15,7 +15,8 @@ var config = function (devMode) {
                     test: /\.css$/i,
                     use: [
                         devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-                        'css-loader'
+                        'css-loader',
+                        'postcss-loader'
                     ],
                 }
             ],

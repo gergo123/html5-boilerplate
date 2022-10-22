@@ -7,7 +7,7 @@ Minimalistic html5 boilerplate with scaling header, main and footer sections wit
 
 + To allow the content part to be small becase of the shortness of content, all the while keeping the footer at the very bottom.
 + And if the content grows, a vertical scroll bar should appear as you would expect to work on any other website.
-+ Have a basic setup of **webpack** with basic css interpreters.
++ Have a basic setup of **webpack** with basic css-loader.
 
 # Tech
 + Html, Css
@@ -15,3 +15,10 @@ Minimalistic html5 boilerplate with scaling header, main and footer sections wit
 
 ## Ipsum provided by
 https://baconipsum.com/
+
+# Npm script descriptions
+
+ - npm run build
+ -- injects inline styles into template files in ***src/assets/index.html***
+ - npm run build:production
+ -- extracts css into a seperate file

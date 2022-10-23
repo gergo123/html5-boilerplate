@@ -31,9 +31,8 @@ https://baconipsum.com/
  - npm run watch
  -- starts webpack in watch mode which waits for file changes in the dependency tree, and triggers a recompile
  - npm run start
- -- starts webpack dev server which staticly hosts the contents of folder ~~./dist~~ with hot reload active
+ -- starts webpack dev server which staticly hosts the contents of folder **./dist** with hot reload active
 
  ## How to use in development
 
- Start ~~npm run watch~~ and start ~~npm run start~~ in seperate command line windows. (or setup another task which runs both in parallel)
- 
+ Start **npm run watch** and start **npm run start** in seperate command line windows. (or setup another task which runs both in parallel)

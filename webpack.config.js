@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var config = function (devMode) {
     return {
         mode: "development",
-        entry: './src/index.js',
+        entry: './src/app.js',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
@@ -24,14 +24,14 @@ var config = function (devMode) {
                     ],
                 },
                 {
-                    test: /\.(js)$/,
+                    test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
                     use: ["babel-loader"],
                 },
             ],
         },
         resolve: {
-            extensions: ["*", ".js"],
+            extensions: ["*", ".js", ".jsx"],
         },
         plugins: [new HtmlWebpackPlugin({
             filename: 'index.html',

@@ -1,7 +1,7 @@
 
 # Description
 
-~~Minimalistic~~ html5 boilerplate with scaling header, main and footer sections with webpack and tailwind css support.
+~~Minimalistic~~ html5 boilerplate with scaling header, main and footer sections with webpack,  tailwind css and React js support.
 
 # Goals of the template
 
@@ -9,13 +9,17 @@
 + And if the content grows, a vertical scroll bar should appear as you would expect to work on any other website.
 + Have a basic setup of **webpack** with basic css-loader.
 + Allow using tailwind css framework
++ Abbility to use React js framework
 
 # Tech
+
 + Html, Css
 + webpack
 + tailwind css
++ React js
 
 ## Ipsum provided by
+
 https://baconipsum.com/
 
 # Npm script descriptions
@@ -25,4 +29,11 @@ https://baconipsum.com/
  - npm run build:production
  -- extracts css into a seperate file
  - npm run watch
- -- starts a node module which waits for file changes, than runs the build npm task
+ -- starts webpack in watch mode which waits for file changes in the dependency tree, and triggers a recompile
+ - npm run start
+ -- starts webpack dev server which staticly hosts the contents of folder ~~./dist~~ with hot reload active
+
+ ## How to use in development
+
+ Start ~~npm run watch~~ and start ~~npm run start~~ in seperate command line windows. (or setup another task which runs both in parallel)
+ 

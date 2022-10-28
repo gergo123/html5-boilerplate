@@ -9,6 +9,7 @@ var config = function (devMode) {
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
+            assetModuleFilename: 'resources/[hash][ext][query]'
         },
         devServer: {
             static: './dist',
@@ -22,6 +23,22 @@ var config = function (devMode) {
                         'css-loader',
                         'postcss-loader'
                     ],
+                },
+                {
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/resource',
+                    use: [
+                        {
+                            loader: 'url-loader',
+                            options: {
+                                limit: 8192,
+                            },
+                        },
+                    ],
+                },
+                {
+                    test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                    type: 'asset/resource',
                 },
                 {
                     test: /\.(js|jsx)$/,

@@ -1,7 +1,12 @@
+import BarbecueIco from './assets/imgs/barbecue.png';
+import GalaxyImg from './assets/imgs/webb-early-infrared.jpg'
+
 const HelloWorld = ({ ...props }) => {
 
     return (<>
+        <img src={BarbecueIco} />
         Hello World from react!
+        <img src={GalaxyImg} />
     </>);
 }
 

@@ -36,3 +36,6 @@ https://baconipsum.com/
  ## How to use in development
 
  Start **npm run watch** and start **npm run start** in seperate command line windows. (or setup another task which runs both in parallel)
+
+## Attribution
+- [Grilled food icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/grilled-food)

@@ -26,15 +26,12 @@ var config = function (devMode) {
                 },
                 {
                     test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                    type: 'asset/resource',
-                    use: [
-                        {
-                            loader: 'url-loader',
-                            options: {
-                                limit: 8192,
-                            },
-                        },
-                    ],
+                    type: 'asset',
+                    parser: {
+                        dataUrlCondition: {
+                            maxSize: 32 * 1024 // 4kb
+                        }
+                    }
                 },
                 {
                     test: /\.(woff|woff2|eot|ttf|otf)$/i,

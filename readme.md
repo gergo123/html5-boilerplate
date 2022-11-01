@@ -17,6 +17,7 @@
 + webpack
 + tailwind css
 + React js
++ [React hook form](https://react-hook-form.com/)
 
 ## Ipsum provided by
 

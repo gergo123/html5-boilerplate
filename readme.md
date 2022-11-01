@@ -39,6 +39,7 @@ Start **npm run watch** and start **npm run start** in seperate command line win
 
 ## Boilerplate usage, programming practices applicable
 - absolute module resolving: just use *'import Module from '**js**/module'*. Where the part of the path 'js' have been set up as an alias to *./src* folder
+- no need to add *import React from ...* statement because of **.babelrc** settings *"runtime": "automatic"*
 
 ## Random usefull links
 - [Webpack asset managements how to](https://webpack.js.org/guides/asset-modules/)

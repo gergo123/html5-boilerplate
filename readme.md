@@ -25,17 +25,23 @@ https://baconipsum.com/
 # Npm script descriptions
 
  - npm run build
- -- injects inline styles into template files in ***src/assets/index.html***
+   - injects inline styles into template files in ***src/assets/index.html***
  - npm run build:production
- -- extracts css into a seperate file
+   - extracts css into a seperate file
  - npm run watch
- -- starts webpack in watch mode which waits for file changes in the dependency tree, and triggers a recompile
+   - starts webpack in watch mode which waits for file changes in the dependency tree, and triggers a recompile
  - npm run start
- -- starts webpack dev server which staticly hosts the contents of folder **./dist** with hot reload active
+   - starts webpack dev server which staticly hosts the contents of folder **./dist** with hot reload active
 
- ## How to use in development
+## How to use in development
 
- Start **npm run watch** and start **npm run start** in seperate command line windows. (or setup another task which runs both in parallel)
+Start **npm run watch** and start **npm run start** in seperate command line windows. (or setup another task which runs both in parallel)
+
+## Boilerplate usage, programming practices applicable
+- absolute module resolving: just use *'import Module from '**js**/module'*. Where the part of the path 'js' have been set up as an alias to *./src* folder
+
+## Random usefull links
+- [Webpack asset managements how to](https://webpack.js.org/guides/asset-modules/)
 
 ## Attribution
 - [Grilled food icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/grilled-food)

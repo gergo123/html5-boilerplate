@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import HelloWorld from "./hello-world";
+import HelloWorld from "js/hello-world.js";
 
 import './styles.css'
 

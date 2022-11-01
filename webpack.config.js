@@ -46,6 +46,9 @@ var config = function (devMode) {
         },
         resolve: {
             extensions: ["*", ".js", ".jsx"],
+            alias: {
+                js: path.resolve(__dirname, './src')
+            }
         },
         plugins: [new HtmlWebpackPlugin({
             filename: 'index.html',
